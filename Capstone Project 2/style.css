@@ -1,0 +1,613 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+    overflow-x: hidden;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+.nav-background {
+    background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgb(253, 29, 186) 50%, rgb(145, 69, 252) 100%);
+    background-size: 400% 400%;
+    width: 100%;
+    animation: gradientMove 12s ease infinite; 
+}
+
+.container-new {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+.navbar-list a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar-list a:hover {
+    background-color: rgba(209, 206, 199, 0.443)
+}
+
+#home {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 40%, rgba(253, 29, 252, 1) 72%, rgba(69, 73, 252, 1) 100%);
+    background-size: cover;
+    height: 350px;
+    display: flex; 
+    justify-content: center; 
+    text-align: center; 
+    flex-direction: column; 
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 80px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: small;
+    color: white;
+    margin: 0;
+}
+}
+
+.container.about{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.about {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 40%, rgba(251, 176, 255, 0.8) 72%, rgba(255, 168, 255, 0.8) 100%);
+    padding-top: 100px; 
+    padding-bottom: 80px; 
+}
+
+.about > h2 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 80px; 
+    color: #F47CB9;
+}
+
+.about > p {
+    padding-left: 20px; 
+    text-align: justify;
+    font-size: 16px; 
+    width: 90%;
+}
+
+.about > img {
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+#experience {
+    padding: 40px 0;
+    background: linear-gradient(90deg, rgba(120, 87, 242, 0.8) 8%, rgba(192, 158, 251, 0.737) 20%, rgba(255, 255, 255, 1) 80%);
+}
+
+.container.experience {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 20px;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #F47CB9;
+    margin-bottom: 10px;
+}
+
+ul,
+ol {
+    list-style: circle;
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    line-height: 1.5;
+    text-align: left; 
+}
+
+ul li strong {
+    color: #333; 
+}
+
+ol li {
+    font-size: 1.2rem;
+    color: black; 
+}
+
+hr {
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid #ddd;
+}
+
+ol li span {
+    font-weight: bold;
+    color: #F47CB9;
+}
+
+.text-stars-1 {
+    position: relative;
+    left: 100px;
+}
+
+.text-stars-2 {
+    position: relative;
+    left: 99px;
+}
+
+.text-stars-3 {
+    position: relative;
+    left: 151px;
+}
+
+.text-stars-4 {
+    position: relative;
+    left: 73px;
+}
+
+.text-stars-5 {
+    position: relative;
+    left: 55px;
+}
+
+#works {
+    padding: 40px 0;
+    background: linear-gradient(90deg, rgba(151, 124, 247, 0.8) 8%, rgba(241, 108, 241, 0.737) 20%, rgb(121, 87, 244) 80%);
+    text-align: center;
+
+h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 40px; 
+    text-transform: uppercase;
+}
+
+.container.works img {
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.container.works > div {
+    display: inline-block; 
+    width: 30%; 
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1rem;
+    color: #fff;
+}
+}
+
+#contact{
+    padding: 40px 0;
+    background: linear-gradient(90deg, rgba(251, 243, 253, 0.8) 8%, rgba(245, 238, 251, 0.737) 40%, rgb(165, 147, 255) 80%);
+    text-align: center;
+    height: 200px;
+
+h2{
+    font-size: 3em;
+    color: black;
+    text-align: center;
+    padding-left: 30px;
+ }
+}
+
+p{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-left: 34px; 
+ }
+
+ .email{
+    margin-top: 30px;
+ }
+
+.email {
+    display: inline-block;
+    background-color: #F47CB9; 
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border-radius: 25px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email p {
+    font-weight: bold; 
+}
+
+.email:hover {
+    transform: translateY(-5px); 
+}
+
+.email:hover p {
+    text-decoration: underline; 
+}
+
+.email::before {
+    content: "📧"; 
+    margin-right: 10px;
+    font-size: 1.5rem; 
+    vertical-align: middle;
+}
+
+footer{
+    padding: 10px 0;
+    background: linear-gradient(90deg, rgba(244, 238, 247, 0.637) 8%, rgba(226, 78, 255, 0.409) 40%, rgba(127, 21, 220, 0.632) 80%);
+    text-align: left;
+    height: 10px;
+    color: black;
+}
+
+/* для екранів менше 1024px */
+@media (max-width: 1023px) {
+
+    .container-new {
+        max-width: 769px;
+    }
+
+    .navbar-list {
+        justify-content: center;
+        padding-left: 0; 
+    }
+
+    .navbar-list li {
+        font-size: 0.9rem;
+    }
+
+    #home h1, #home h3 {
+        text-align: center;
+    }
+
+    /* Секція About */
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding-top: 50px;
+    }
+
+    .about > h2 {
+        font-size: 60px;  
+    }
+
+    .about > p {
+        padding-left: 30px;
+        padding-top: 20px;
+        width: 90%;
+        text-align: justify;
+        font-size: 14px;  
+    }
+
+    .about > img {
+        width: 200px; 
+        display: block;  
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+
+    #experience {
+        padding: 30px 0;
+    }
+
+    .container.experience {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .container.experience ul, .container.experience ol {
+        padding-left: 15px;
+    }
+
+    ul, ol {
+        list-style: circle;
+        padding-left: 20px;
+    }
+
+    .container.experience h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Секція Works */
+    #works {
+        padding: 30px 0;
+    }
+
+    .container.works {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .container.works img {
+        max-width: 220px;
+    }
+
+    .container.works > div {
+        width: 100%; /* Повний екран для кожної картки */
+        margin-bottom: 20px;
+        margin-right: 5px;
+        padding-right: 4px;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    /* Секція Contact */
+    #contact {
+        padding: 30px 0;
+    }
+
+    .email {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* для екранів менше 768px */
+@media (max-width: 768px) {
+
+    .navbar-list {
+        flex-direction: column;  /* Перетворюємо навігацію на вертикальну */
+        align-items: center;
+    }
+
+    .navbar-list li {
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+
+    #home {
+        height: 300px;  /* Зменшуємо висоту для малих екранів */
+    }
+
+    #home h1 {
+        font-size: 50px;  /* Зменшуємо шрифт */
+        margin-bottom: 15px;
+    }
+
+    #home h3 {
+        font-size: 16px;
+    }
+
+    .about {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .about > h2 {
+        padding-left: 15px;
+        font-size: 50px;  
+    }
+
+    .about > p {
+        font-size: 14px; 
+        padding-left: 20px;
+        padding-top: 20px;
+        width: 90%;
+        padding-right: 10px;
+    }
+
+    .about > img {
+        width: 200px;  
+        display: block;  /* Робимо картинку блочним елементом */
+        margin-left: auto; /* Центруємо картинку зліва */
+        margin-right: auto; /* Центруємо картинку справа */
+    }
+
+
+
+    #experience {
+        padding: 20px 0;
+    }
+
+    .container.experience h2 {
+        font-size: 2rem;
+    }
+
+    .container.experience ul, .container.experience ol {
+        padding-left: 15px;
+    }
+
+    ul, ol {
+        list-style: circle;
+        padding-left: 20px;
+    }
+
+    /* Секція Works */
+    .container.works > div {
+        width: 100%; /* Повний екран для кожної картки */
+        margin-bottom: 20px;
+        margin-right: 5px;
+        padding-right: 4px;
+    }
+
+    p {
+        padding-left: 2px;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    /* Секція Contact */
+    #contact {
+        padding: 20px 0;
+    }
+
+    .email {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
+}
+
+/* для екранів менше 480px */
+@media (max-width: 480px) {
+
+    .container-new{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-list {
+        flex-direction: column;  
+        padding: 10px;
+    }
+
+    .navbar-list li {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+
+    #home {
+        height: 350px;  
+    }
+
+    #home h1 {
+        font-size: 60px;  
+        margin-bottom: 15px;
+    }
+
+    #home h3 {
+        font-size: 12px;  
+    }
+
+    .about {
+        grid-template-columns: 1fr;  
+        grid-template-rows: auto;
+        padding-top: 20px;
+    }
+
+    .about > h2 {
+        padding-left: 15px;
+        font-size: 40px;  
+    }
+
+    .about > p {
+        font-size: 14px; 
+        padding-left: 14px;
+        padding-top: 20px;
+        width: 90%;
+        padding-right: 14px;
+    }
+
+    .about > img {
+        width: 200px;  
+        display: block;  /* Робимо картинку блочним елементом */
+        margin-left: auto; /* Центруємо картинку зліва */
+        margin-right: auto; /* Центруємо картинку справа */
+    }
+
+    #experience {
+        padding: 15px 0 15px 15px;
+    }
+
+    #text-stars {
+        position: relative;
+        left: -2px;
+    }
+
+    .container.experience h2 {
+        font-size: 1.8rem;
+    }
+
+    ul, ol {
+    list-style: circle;
+    padding-left: 20px;
+}
+
+    /* Секція Works */
+    .container.works > div {
+        width: 100%; /* Повний екран для кожної картки */
+        margin-bottom: 20px;
+        margin-right: 5px;
+        padding-right: 4px;
+    }
+
+    p {
+        padding-left: 2px;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    /* Секція Contact */
+    #contact {
+        padding: 15px 0;
+    }
+
+    .email {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
