@@ -1,0 +1,35 @@
+<%- include('partials/header.ejs') %>
+
+<div class="container my-5">
+    <h2 class="text-center mb-4 text-white"><%= postId ? 'Edit' : 'Create' %> Post</h2>
+    <form action="<%= postId ? '/update' : '/save' %>" method="POST" class="bg-dark text-white p-4 rounded-3 shadow-sm">
+        <input type="hidden" name="index" value="<%= postId %>">
+        
+        <div class="row justify-content-center">
+            <!-- Form Area (Left Side) -->
+            <div class="col-12 col-lg-8 mb-4">
+                <div class="mb-3">
+                    <label for="title" class="form-label fs-5">Title</label>
+                    <input type="text" id="title" name="title" class="form-control border-2 bg-light text-dark" required value="<%= title %>" style="font-size: 1.1rem;">
+                </div>
+                <div class="mb-3">
+                    <label for="content" class="form-label fs-5">Content</label>
+                    <textarea id="content" name="content" class="form-control border-2 bg-light text-dark" rows="8" required style="font-size: 1rem;"><%= content %></textarea>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 48%;">Save Post</button>
+                    <a href="/" class="btn btn-secondary btn-lg" style="width: 48%;">Cancel</a>
+                </div>
+            </div>
+
+            <!-- Sidebar (Right Top) -->
+            <div class="col-12 col-lg-3 ms-lg-3 p-3 bg-light rounded-3 shadow-sm d-none d-lg-block" style="height: 190px; max-width: 300px; margin-top: 110px;">
+                <p class="fs-5 text-muted text-center" style="font-family: 'Open Sans', sans-serif;">
+                    Let those quirky thoughts fly – the internet's a mad wilderness, and your ideas are like sparkly confetti in the wild! ✨🌱
+                </p>
+            </div>
+        </div>
+    </form>
+</div>
+
+<%- include("partials/footer.ejs") %>
